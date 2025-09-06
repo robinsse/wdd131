@@ -26,7 +26,7 @@ nav {
     justify-content: space-around;
 }
 
-.right {
+aside {
     grid-column: 3 / 4;
     background: var(--accent1-color);
 }
