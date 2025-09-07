@@ -1,0 +1,83 @@
+:root {
+    --primary-color: #496f5d;
+    --secondary-color: #afc4ba;
+    --accent1-color: #c0c0c0;
+    --accent2-color: #eaa51b;
+    --heading-font: "Boldonse", system-ui;
+    --paragraph-font: "Gidole", sans-serif;
+}
+
+header {
+    background: var(--primary-color);
+    padding-top: 25px;
+}
+
+header img,
+#course-title {
+    display: block;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    background: var(--secondary-color);
+    padding: 25px;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    color: var(--accent2-color)
+}
+
+main {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    min-height: 450px;
+}
+
+.card img {
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+.card {
+    text-align: justify;
+    margin: 0 25px;
+}
+
+footer {
+    background: var(--primary-color);
+    justify-items: center;
+    padding: 10px;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+}
+
+h1 {
+    justify-self: center;
+}
+
+h2 {
+    color: var(--accent2-color);
+}
+
+p,
+nav {
+    font-family: var(--paragraph-font);
+}
