@@ -2,7 +2,7 @@
     --primary-color: #496f5d;
     --secondary-color: #afc4ba;
     --accent1-color: #c0c0c0;
-    --accent2-color: #eaa51b;
+    --accent2-color: #a07113;
     --heading-font: "Boldonse", system-ui;
     --paragraph-font: "Gidole", sans-serif;
 }
@@ -16,6 +16,7 @@ header img,
 #course-title {
     display: block;
     margin: 0 auto;
+    color: white;
 }
 
 nav {
@@ -62,6 +63,7 @@ footer {
     background: var(--primary-color);
     justify-items: center;
     padding: 10px;
+    color: white;
 }
 
 h1,
