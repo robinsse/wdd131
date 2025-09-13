@@ -1,0 +1,43 @@
+:root {
+    --primary-color: #496f5d;
+    --secondary-color: #afc4ba;
+    --accent1-color: #c0c0c0;
+    --accent2-color: #a07113;
+    --heading-font: "Boldonse", system-ui;
+    --paragraph-font: "Gidole", sans-serif;
+}
+
+header,
+footer,
+nav,
+.container {
+    max-width: 1000px;
+}
+
+#menu {
+    display: none;
+}
+
+nav {
+    display: block;
+    background-color: var(--primary-color);
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.container img {
+    display: block;
+    width: 100%;
+}
