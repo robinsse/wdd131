@@ -1,0 +1,57 @@
+:root {
+    --primary-color: #003a3b;
+    --secondary-color: #b4ddde;
+    --heading-font: "Boldonse", system-ui;
+    --paragraph-font: "Gidole", sans-serif;
+}
+
+header,
+h2 {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+h2 {
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.data,
+.weather {
+    background-color: var(--secondary-color);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+th {
+    text-align: right;
+    padding-right: 10px;
+}
+
+td {
+    text-align: left;
+}
+
+.icon {
+    width: 40px;
+    padding-bottom: 10px;
+}
+
+.emoji {
+    display: none;
+}
+
+footer {
+    background: var(--primary-color);
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
