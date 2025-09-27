@@ -12,21 +12,14 @@ footer,
 main {
     max-width: 1000px;
     margin: 0 auto;
-    
 }
 
 header {
     background-color: var(--accent1-color);
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
     border: 1px solid black;
-    font-family: var(--heading-font);
-}
-
-body {
-    font-family: var(--paragraph-font);
 }
 
 #menu {
@@ -58,7 +51,7 @@ nav.open {
 
 nav {
     background-color: var(--primary-color);
-    width: auto;
+    margin: 0 auto;
 }
 
 nav ul {
