@@ -1,0 +1,36 @@
+:root {
+    --primary-color: #395C6B;
+    --secondary-color: #354c7c;
+    --accent-color-1: #BCD3F2;
+    --accent-color-2: #D4CB92;
+    --heading-font: "DM Serif Display",
+        serif;
+    --paragraph-font: "Lora", serif;
+}
+
+.c1 {
+    color: var(--primary-color)
+}
+
+.c2 {
+    color: var(--secondary-color)
+}
+
+.c3 {
+    background-color: var(--accent-color-1)
+}
+
+.c4 {
+    background-color: var(--accent-color-2)
+}
+
+h1,
+.f1 {
+    font-family: var(--heading-font);
+}
+
+p,
+li,
+.f2 {
+    font-family: var(--paragraph-font);
+}
