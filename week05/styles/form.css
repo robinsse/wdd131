@@ -1,0 +1,98 @@
+header {
+    padding: .5rem 2%;
+    background-color: navy;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+
+.wf1 fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+    background-color: #d9dff1;
+}
+
+.wf1 legend {
+    padding: 0 .5rem;
+}
+
+.wf1 label {
+    display: block;
+    padding-top: 1rem;
+    font-size: .9rem;
+}
+
+.wf1 label.set,
+.wf1 div.rating,
+.wf1 div.features {
+       margin-bottom: 0.75rem;
+}
+
+.wf1 div {
+    padding-top: 1rem;
+    font-size: .9rem;
+}
+
+.optional {
+    color: navy;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="textarea"],
+.wf1 input[type="date"],
+.wf1 select {
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.wf1 input[type="textarea"] {
+    min-height: 6rem;
+    resize: vertical;
+}
+
+.wf1 input[type="radio"],
+.wf1 input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.wf1 input[type="submit"] {
+    border: 2px solid navy;
+    color: navy;
+    background-color: #eee;
+    padding: 1rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 0.5rem 0% 2rem 0%;
+    box-shadow: 1px 1px 4px #999;
+    font-size: 1.25rem;
+}
+
+.wf1 input:required {
+    border-right: 5px solid navy;
+}
+
+.wf1 input:required:valid {
+    border-right: 5px solid green;
+}
+
+footer {
+    background-color: navy;
+    padding: .5rem 2%;
+    text-align: center;
+    color: white;
+}
