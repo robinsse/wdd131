@@ -1,3 +1,9 @@
+:root {
+    --heading-font: "DM Serif Display",
+                serif;
+    --paragraph-font: "Lora", serif;
+}
+
 header {
     padding: .5rem 2%;
     background-color: navy;
@@ -6,11 +12,13 @@ header {
 
 header h1 {
     margin: 0;
+    font-family: var(--heading-font);
 }
 
 main {
     padding: 0 2%;
     min-height: 20rem;
+    font-family: var(--paragraph-font);
 }
 
 .wf1 fieldset {
@@ -34,7 +42,7 @@ main {
 .wf1 label.set,
 .wf1 div.rating,
 .wf1 div.features {
-       margin-bottom: 0.75rem;
+    margin-bottom: 0.75rem;
 }
 
 .wf1 div {
@@ -47,7 +55,7 @@ main {
 }
 
 .wf1 input[type="text"],
-.wf1 input[type="textarea"],
+.wf1 textarea,
 .wf1 input[type="date"],
 .wf1 select {
     display: block;
@@ -60,7 +68,7 @@ main {
     appearance: none;
 }
 
-.wf1 input[type="textarea"] {
+.wf1 textarea {
     min-height: 6rem;
     resize: vertical;
 }

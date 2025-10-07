@@ -9,6 +9,12 @@
     <meta name="author" content="Selena Robins">
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -25,11 +31,11 @@
                 </label>
 
                 <div class="rating">Overall Rating*
-                    <label><input type="radio" name="rating" id="1" required>☆</label>
-                    <label><input type="radio" name="rating" id="2" required>☆☆</label>
-                    <label><input type="radio" name="rating" id="3" required>☆☆☆</label>
-                    <label><input type="radio" name="rating" id="4" required>☆☆☆☆</label>
-                    <label><input type="radio" name="rating" id="5" required>☆☆☆☆☆</label>
+                    <label><input type="radio" name="rating" id="rating1" required>☆</label>
+                    <label><input type="radio" name="rating" id="rating2" required>☆☆</label>
+                    <label><input type="radio" name="rating" id="rating3" required>☆☆☆</label>
+                    <label><input type="radio" name="rating" id="rating4" required>☆☆☆☆</label>
+                    <label><input type="radio" name="rating" id="rating5" required>☆☆☆☆☆</label>
                 </div>
 
                 <label class="set">Date of Installation*<input type="date" name="installationDate" required></label>
@@ -42,8 +48,9 @@
                     <label><input type="checkbox" id="performance" name="performance" value="yes">Performance</label>
                 </div>
 
-                <label class="set">Written Review <span class="optional">(Optional)</span><input type="textarea"
-                        id="review" name="review"></label>
+                <label class="set">Written Review <span class="optional">(Optional)</span>
+                    <textarea id="review" name="review"></textarea>
+                </label>
 
                 <label class="set">Your Name<span class="optional">(Optional)</span><input type="text"></label>
                 <input type="submit" value="Post Review">
