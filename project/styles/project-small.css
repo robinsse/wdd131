@@ -1,0 +1,144 @@
+:root {
+    --primary-color: #395C6B;
+    --secondary-color: #354c7c;
+    --accent-color-1: #BCD3F2;
+    --accent-color-2: #D4CB92;
+    --heading-font: "DM Serif Display",
+        serif;
+    --paragraph-font: "Lora", serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.journal img {
+    border: 10px solid var(--accent-color-2);
+}
+
+header,
+footer,
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+main h2,
+main h3 {
+    color: var(--secondary-color)
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    font-family: var(--heading-font);
+}
+
+body {
+    font-family: var(--paragraph-font);
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: white;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+nav {
+    display: none;
+    background-color: var(--accent-color-1);
+    width: auto;
+}
+
+nav.open {
+    display: block;
+
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    background-color: var(--accent-color-2);
+}
+
+footer {
+    background: var(--primary-color);
+    padding: 10px;
+    color: white;
+}
+
+footer,
+h1,
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+}
+
+.wf1 fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+    background-color: var(--accent-color-2);
+}
+
+.wf1 label {
+    display: block;
+    padding-top: 1rem;
+}
+
+.wf1 label.set,
+.wf1 div.interest {
+    margin-bottom: 0.75rem;
+}
+
+.wf1 div {
+    padding-top: 1rem;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="date"],
+.wf1 input[type="email"] {
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}

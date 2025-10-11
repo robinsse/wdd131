@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="W06 Project: Howard Wing">
+    <meta name="author" content="Selena Robins">
+    <title>Howard Wing: An Autobiography</title>
+    <link rel="stylesheet" href="styles/project-small.css">
+    <link rel="stylesheet" href="styles/project-large.css" media="screen and (min-width: 800px)">
+    <script src="scripts/project.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Howard Wing</h1>
+        <button aria-label="Hamburger menu" id="menu"></button>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html" id="home">Home</a></li>
+                <li><a href="cycling.html" id="cycling">Cycling</a></li>
+                <li><a href="wwii.html" id="WWII">WWII</a></li>
+                <li><a href="painting.html" id="painting">Paintings</a></li>
+                <li><a href="guestbook.html" id="guestbook">Guestbook</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Guestbook</h2>
+        <form method="get" action="review.html" class="wf1">
+            <fieldset>
+                <label class="set">Name*<input type="text" name="guestName" required></label>
+                <label class="set">Date of Visit*<input type="date" name="visitationDate" required></label>
+
+                <div class="interest">What interests you most about Howard Wing?
+                    <label><input type="radio" name="interest" id="cycling" required>Cycling Enthusiast</label>
+                    <label><input type="radio" name="interest" id="war" required>WWII Enthusiast</label>
+                    <label><input type="radio" name="interest" id="art" required>Art Enthusiast</label>
+                    <label><input type="radio" name="interest" id="relative" required>I am a relative</label>
+                    <label><input type="radio" name="interest" id="other" required>Other</label>
+                </div>
+
+                <label class="set">Email (Optional)<input type="email" id="email" name="email"></label>
+                <label class="set"><input type="checkbox" id="moreInfo" name="moreInfo" value="yes">I would like more
+                    information about Howard Wing</label>
+
+
+                </div>
+
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Selena Robins - Idaho, USA</p>
+        <p id="lastModified">Last Modified: <span id="when"></span></p>
+    </footer>
+</body>
+
+</html>
